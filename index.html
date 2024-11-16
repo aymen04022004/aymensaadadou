@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e7f4ec;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .form-group button {
+            margin-top: 15px;
+            background-color: #0b774b;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+ 
+       }
+       .form-container h2 {
+            margin-bottom: 25px;
+        margin-left: 30px;}
+
+            .form-container {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 20px;
+            width: 500px;}
+            label {
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 5px;
+}
+input[type="text"],  textarea {
+    width: 90%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+input[type="email"], textarea {
+    width: 95.3%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+           
+    </style>
+    <script>
+       
+        function afficherMessage() {
+            alert("Le formulaire a été soumis !");
+        }
+        
+
+    </script>
+</head>
+<body>
+    <div class="form-container">
+        <h2  >Contact Us</h2>
+        <form onsubmit="afficherMessage(); return false;">
+            
+            <table border="0" align="center">
+                <tr>
+                    <td colspan="1">
+                        
+                            <label for="firstname">First Name *</label>
+
+                        
+                    </td>
+                    <td colspan="1">
+                        
+                            <label for="lastName">Last Name *</label>
+                           
+                        
+                    </td>
+                   
+                </tr>
+                <tr>
+                    <td colspan="1">
+                        <input type="text" id="text" name="firstName" required></td></div>
+                          
+                        <td colspan="1">
+                            <input type="text" id="text" name="lastName" required></td>
+                        
+                </tr>
+                <tr >
+                    
+                    <td colspan="2">
+                        <label for="email">Email *</label> </td>
+                        </tr>
+                        <tr>
+                   
+                    <td colspan="2">
+                        <input type="email" id="email" name="email" placeholder="Entrez votre email" required></td>
+                    
+                </tr>
+                <tr >
+                   
+                    <td colspan="2">
+                        <label for="Query type">Query type *</label> </td> 
+                        </tr>
+                        <tr>
+                            <tr>
+                                <td colspan="1">
+                                    <input type="radio" id="email" name="email" required>General enquiry</td>
+                                      
+                                       
+                                    <td colspan="1">
+                                        <input type="radio" id="email" name="email"  required>Support request</td>
+                                    
+                            </tr>
+                            <tr> 
+                                
+                                    
+                                        <td colspan="1">
+                                        <label for="Message">Message *</label>
+            
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" >
+                                    <textarea id="message" name="message"  required></textarea> </td>
+                            </tr>
+                            <tr>
+                                 <td colspan="2">
+                                <input type="checkbox"> 
+                                Thereby consent to being contacted by the team*
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" align="center">
+                            <div class="form-group">
+                                <button type="submit">Submit</button>
+                                
+                            </div>
+                            </td>
+                            </tr>
+            </table>
+            
+        </form>
+    
+    
+    
+    
+    
+    
+    </div>
+    
+
+</body>
+</html>
